@@ -53,5 +53,7 @@ Route::get('/about', [PageController::class, 'about']);
             Route::resource('photos', PhotoController::class)->except([ 
                 'create', 'store', 'update', 'destroy' 
                 ]); 
+            
+                Route::get('/greeting', [WellcomeController::class, 'greeting']); 
 
 
